@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<title></title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body{
+			background-image: url(science.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			height: 100vh;
+			display: grid;
+			place-items: center;
+		}
+		.card{
+			width: 300px;
+			height: 300px;
+			position: relative;
+			cursor: pointer;
+			margin: 4em 2em;
+			box-shadow: rgba(0,0,0,0.2) 0px 60px 40px -7px;
+			background: transparent;
+		}
+		figure{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top:0;
+			left: 0;
+			transform-origin: 0% 0%;
+			transition: all 850ms ease-in-out;
+			z-index: 2;
+		}
+		.card:hover figure{
+			top: -10%;
+			left: -10%;
+			transform: scale(0.6);
+		}
+		img{
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			box-shadow: rgba(0,0,0,0.2) 0px 60px 40px -7px;
+		}
+		.title{
+			position: absolute;
+			width: 50%;
+			height: 50%;
+			right: 0;
+			display: grid;
+			place-items: center;
+			z-index: 1;
+		}
+		.title h2{
+			font-size: 1.25rem;
+			text-align: left;
+			margin-left: 20px;
+		}
+		.content{
+			position: absolute;
+			bottom: 0;
+			padding: 1.2cm 1.5cm;
+			z-index: 1;
+			color: black;
+			line-height: 15px;
+		}
+
+		@media (max-width: 768px){
+			body{
+				background-image: url(science2.jpg);
+			}
+		}
+		@media (min-width: 768px){
+			section{
+				display: flex;
+			}
+		}
+	</style>
+</head>
+<body>
+<section class=" wow zoomIn">
+	<div class="card">
+		<figure>
+			<img src="zabina.jpg" width="800px">
+		</figure>
+		<div class="title">
+			<h2>Zabina</h2>			
+		</div>
+		<div class="content">
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+			</p>
+		</div>
+	</div>
+
+	<div class="card">
+		<figure>
+			<img src="naya.jpg" width="800px">
+		</figure>
+		<div class="title">
+			<h2>Naya</h2>			
+		</div>
+		<div class="content">
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+			</p>
+		</div>
+	</div>
+
+	<div class="card">
+		<figure>
+			<img src="emon.jpg" width="800px">
+		</figure>
+		<div class="title">
+			<h2>Emon</h2>			
+		</div>
+		<div class="content">
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+			</p>
+		</div>
+	</div>
+</section>
+<script src="wow.min.js"></script>
+  <script>
+  new WOW().init();
+  </script>
+</body>
+</html>

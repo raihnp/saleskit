@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+  body
+ {
+   background-color: #AED768;
+ }
+.container{
+ width: 100%;
+ padding-bottom: 40px;
+ }
+ .container p{
+  font-size: 20px;
+ }
+
+/*++++++++++++++++++++++++++++++++++++ RESPONSIVE ++++++++++++++++++++++++++++++++++*/
+
+ @media (max-width: 575.98px) { 
+  .container{
+ width: 100%;
+ padding-bottom: 40px;
+ }
+.container p{
+  font-size: 24px;
+ }
+.isi {
+ width: 90%;
+ margin-top: 50px;
+ margin-bottom: 50px;
+}
+.isi span{
+  text-align: center;
+}
+  }
